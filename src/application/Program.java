@@ -25,8 +25,11 @@ public class Program {
             System.out.print("Outsourced (y/n)? ");
             char outsourced = sc.next().charAt(0);
             if (outsourced == 'n') {
+                System.out.print("Name: ");
                 String name = sc.nextLine();
+                System.out.print("Hours: ");
                 int hours = sc.nextInt();
+                System.out.print("Value per hour: ");
                 double valuePerHour = sc.nextDouble();
 
                 Employee employee = new Employee(name, hours, valuePerHour);
