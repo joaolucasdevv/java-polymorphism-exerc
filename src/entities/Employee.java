@@ -15,4 +15,16 @@ public class Employee {
         this.valuePerHour = valuePerHour;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public Integer getHours() {
+        return hours;
+    }
+
+    public Double getValuePerHour() {
+        return valuePerHour;
+    }
+
 }
