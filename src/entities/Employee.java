@@ -27,4 +27,16 @@ public class Employee {
         return valuePerHour;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setHours(Integer hours) {
+        this.hours = hours;
+    }
+
+    public void setValuePerHour(Double valuePerHour) {
+        this.valuePerHour = valuePerHour;
+    }
+
 }
