@@ -20,6 +20,17 @@ public class Program {
         int n = sc.nextInt();
         for (int i=1; i<=n; i++) {
             System.out.println("Employee #" + i + " data:");
+
+            System.out.print("Outsourced (y/n)? ");
+            char outsourced = sc.next().charAt(0);
+            if (outsourced == 'n') {
+                String name = sc.nextLine();
+                int hours = sc.nextInt();
+                double valuePerHour = sc.nextDouble();
+
+                Employee employee = new Employee(name, hours, valuePerHour);
+                employees.add(employee);
+            }
         }
 
 
