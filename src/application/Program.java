@@ -43,6 +43,11 @@ public class Program {
             }
         }
 
+        System.out.println("PAYMENTS:");
+        for (Employee emp : employees) {
+
+        }
+
         sc.close();
     }
 
