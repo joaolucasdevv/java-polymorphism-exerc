@@ -25,6 +25,7 @@ public class Program {
             System.out.print("Outsourced (y/n)? ");
             char outsourced = sc.next().charAt(0);
             if (outsourced == 'n') {
+                sc.nextLine();
                 System.out.print("Name: ");
                 String name = sc.nextLine();
                 System.out.print("Hours: ");
@@ -36,6 +37,7 @@ public class Program {
                 employees.add(employee);
             }
             else {
+                sc.nextLine();
                 System.out.print("Name: ");
                 String name = sc.nextLine();
                 System.out.print("Hours: ");
@@ -50,6 +52,7 @@ public class Program {
             }
         }
 
+        System.out.println();
         System.out.println("PAYMENTS:");
         for (Employee emp : employees) {
             System.out.println(emp.getName() + " - $ " + emp.payment());
