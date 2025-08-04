@@ -1,6 +1,7 @@
 package application;
 
 import entities.Employee;
+import entities.OutsourcedEmployee;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,15 @@ public class Program {
                 double valuePerHour = sc.nextDouble();
 
                 Employee employee = new Employee(name, hours, valuePerHour);
+                employees.add(employee);
+            }
+            else {
+                String name = sc.nextLine();
+                int hours = sc.nextInt();
+                double valuePerHour = sc.nextDouble();
+                double additionalCharge = sc.nextDouble();
+
+                Employee employee = new OutsourcedEmployee(name, hours, valuePerHour, additionalCharge);
                 employees.add(employee);
             }
         }
