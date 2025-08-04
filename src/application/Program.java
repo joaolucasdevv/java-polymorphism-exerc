@@ -45,7 +45,7 @@ public class Program {
 
         System.out.println("PAYMENTS:");
         for (Employee emp : employees) {
-
+            System.out.println(emp.getName() + " - $ " + emp.payment());
         }
 
         sc.close();
