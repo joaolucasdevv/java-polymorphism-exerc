@@ -20,4 +20,10 @@ public class OutsourcedEmployee extends Employee {
         this.additionalCharge = additionalCharge;
     }
 
+    @Override
+    public Double payment() {
+        double percent = 110.0 * additionalCharge / 100;
+        return hours * valuePerHour + percent;
+    }
+
 }
