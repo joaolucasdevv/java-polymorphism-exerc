@@ -12,4 +12,12 @@ public class OutsourcedEmployee extends Employee {
         this.additionalCharge = additionalCharge;
     }
 
+    public Double getAdditionalCharge() {
+        return additionalCharge;
+    }
+
+    public void setAdditionalCharge(Double additionalCharge) {
+        this.additionalCharge = additionalCharge;
+    }
+
 }
