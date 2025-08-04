@@ -36,9 +36,13 @@ public class Program {
                 employees.add(employee);
             }
             else {
+                System.out.print("Name: ");
                 String name = sc.nextLine();
+                System.out.print("Hours: ");
                 int hours = sc.nextInt();
+                System.out.print("Value per hour: ");
                 double valuePerHour = sc.nextDouble();
+                System.out.print("Additional charge: ");
                 double additionalCharge = sc.nextDouble();
 
                 Employee employee = new OutsourcedEmployee(name, hours, valuePerHour, additionalCharge);
