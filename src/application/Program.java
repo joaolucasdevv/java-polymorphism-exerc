@@ -43,7 +43,6 @@ public class Program {
             }
         }
 
-
         sc.close();
     }
 
