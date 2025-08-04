@@ -55,7 +55,7 @@ public class Program {
         System.out.println();
         System.out.println("PAYMENTS:");
         for (Employee emp : employees) {
-            System.out.println(emp.getName() + " - $ " + emp.payment());
+            System.out.printf("%s - $ %.2f%n", emp.getName(), emp.payment());
         }
 
         sc.close();
